@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.all{
+  width: 960px;
+  margin: 50px auto;
+}
+.box p{
+  padding: 20px;
+}
+.box:nth-child(odd){
+  background-color: grey;
+}
+.bottom{
+  margin-top: 50px;
+}
+.square{
+  height: 200px;
+  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 40px;
+  float: left;
+}
+.square:nth-child(4n+1){
+  background-color: orange;
+}
+.square:nth-child(n+2):nth-child(-n+4),
+.square:nth-child(n+6):nth-child(-n+8){
+  background-color: yellow;
+}
+.square:nth-child(3n){
+  margin-right: 0;
+}
+.square:nth-last-child(-n+3){
+margin-bottom: 0;
+}
